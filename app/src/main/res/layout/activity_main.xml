@@ -1,16 +1,68 @@
-<?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:gravity="center"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
 
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello From PassCodes!"
-		android:textSize="32dp"  />
+        android:textSize="32dp" />
+
+    <TextView
+        android:id="@+id/versioninfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="45sp"
+        android:text="v0.0.0-Alpha"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/appdevinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="App is under active development!!!"
+        android:textSize="14dp" />
+
+    <TextView
+        android:id="@+id/appreleaseinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="We Will Release New Version Soon!!!"
+        android:textSize="14dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical" 
+		android:layout_marginTop="16sp" >
+
+        <Button
+            android:id="@+id/repobtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="handleRepoBtnClick"
+            android:text="Track App Development" />
+
+        <Button
+            android:id="@+id/licensebtn"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="handleLicenseBtnClick"
+            android:text="View License" />
+
+        <Button
+            android:id="@+id/quit"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:onClick="handleQuitBtnClick"
+            android:text="Quit" />
+    </LinearLayout>
 
 </LinearLayout>
