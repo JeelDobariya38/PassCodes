@@ -39,30 +39,33 @@
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginTop="16sp"
         android:gravity="center"
-        android:orientation="vertical" 
-		android:layout_marginTop="16sp" >
+        android:orientation="vertical" >
 
         <Button
             android:id="@+id/repobtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="handleRepoBtnClick"
-            android:text="Track App Development" />
+            android:text="Track App Development"
+			android:backgroundTint="@color/button_tint" />
 
         <Button
             android:id="@+id/licensebtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="handleLicenseBtnClick"
-            android:text="View License" />
+            android:text="View License"
+			android:backgroundTint="@color/button_tint" />
 
         <Button
             android:id="@+id/quit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:onClick="handleQuitBtnClick"
-            android:text="Quit" />
+            android:text="Quit"
+			android:backgroundTint="@color/button_tint" />
     </LinearLayout>
 
 </LinearLayout>
