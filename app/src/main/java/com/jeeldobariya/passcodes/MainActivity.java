@@ -15,7 +15,7 @@ public class MainActivity extends Activity {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
   }
-  
+
   public void openBrowser(String link) {
     try {
       Intent website = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
@@ -30,16 +30,15 @@ public class MainActivity extends Activity {
     }
   }
 
-
   public void handleRepoBtnClick(View view) {
-	  this.openBrowser("https://github.com/JeelDobariya38/PassCodes/releases");
+    this.openBrowser("https://github.com/JeelDobariya38/PassCodes/releases");
   }
 
   public void handleLicenseBtnClick(View view) {
-	  this.openBrowser("https://github.com/JeelDobariya38/PassCodes/blob/main/LICENSE.txt");
+    this.openBrowser("https://github.com/JeelDobariya38/PassCodes/blob/main/LICENSE.txt");
   }
 
   public void handleQuitBtnClick(View view) {
-	  finishAndRemoveTask();
+    finishAndRemoveTask();
   }
 }
