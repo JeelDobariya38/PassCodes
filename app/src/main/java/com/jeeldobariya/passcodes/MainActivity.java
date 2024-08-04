@@ -79,8 +79,8 @@ public class MainActivity extends Activity {
   }
 
   public boolean isUpdate(String tag, String name) {
-    String versionName = "v0.0.0-Alpha";
-    String versionTag = "v0.0.0";
+    String versionName = "v0.1.0-Alpha";
+    String versionTag = "v0.1.0";
 
     if (versionTag == tag && versionName == name) {
       return true;
@@ -91,18 +91,15 @@ public class MainActivity extends Activity {
 
   public void showStatus(ApplicationReleaseStatus status) {
     if (status == ApplicationReleaseStatus.UPDATEAVAILABLE) {
-      Toast.makeText(this, "Go to Release", Toast.LENGTH_SHORT).show();
+      Toast.makeText(this, "Update Available!!!", Toast.LENGTH_SHORT).show();
     } else if (status == ApplicationReleaseStatus.NOSTABLERELEASEAVAILABLE) {
-      Toast.makeText(this, "Prerealease", Toast.LENGTH_LONG).show();
-    } else if (status == ApplicationReleaseStatus.NOUPDATEAVAILABLE) {
-      Toast.makeText(this, "All Upto Date", Toast.LENGTH_LONG).show();
-    } else {
-      Toast.makeText(this, "Error", Toast.LENGTH_LONG).show();
+      Toast.makeText(this, "You are using a Prerealease", Toast.LENGTH_LONG).show();
     }
   }
 
   public void onClickPasswordBtn(View view) {
     Logging.log("Under development feature!!!");
+	Toast.makeText(this, "Feature is Under development, Release Soon!!", Toast.LENGTH_SHORT).show();
   }
 
   public void onClickCreditBtn(View view) {

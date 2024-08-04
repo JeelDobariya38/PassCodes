@@ -10,8 +10,8 @@ android {
         applicationId "com.jeeldobariya.passcodes"
         minSdk 31
         targetSdk 33
-        versionCode 1
-        versionName "0.0.0-Alpha"
+        versionCode 2
+        versionName "0.1.0-Alpha"
         
         ndk {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
