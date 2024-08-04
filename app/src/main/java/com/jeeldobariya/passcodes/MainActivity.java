@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
 import com.jeeldobariya.common.Logging;
+import com.jeeldobariya.common.UrlOpener;
 
 public class MainActivity extends Activity {
 
@@ -18,26 +19,12 @@ public class MainActivity extends Activity {
 	Logging.log("App Started!!");
   }
 
-  public void openBrowser(String link) {
-    try {
-      Intent website = new Intent(Intent.ACTION_VIEW, Uri.parse(link));
-      startActivity(website);
-    } catch (ActivityNotFoundException e) {
-      Toast.makeText(
-              this,
-              "No application can handle this request." + " Please install a webbrowser",
-              Toast.LENGTH_LONG)
-          .show();
-      e.printStackTrace();
-    }
-  }
-
   public void handleRepoBtnClick(View view) {
-    this.openBrowser("https://github.com/JeelDobariya38/PassCodes/releases");
+    new UrlOpener(this, "https://github.com/JeelDobariya38/PassCodes/releases");
   }
 
   public void handleLicenseBtnClick(View view) {
-    this.openBrowser("https://github.com/JeelDobariya38/PassCodes/blob/main/LICENSE.txt");
+    new UrlOpener(this, "https://github.com/JeelDobariya38/PassCodes/blob/main/LICENSE.txt");
   }
 
   public void handleQuitBtnClick(View view) {
