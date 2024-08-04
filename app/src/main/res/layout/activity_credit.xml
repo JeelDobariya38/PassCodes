@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".MainActivity" >
+    tools:context=".CreditActivity" >
 
     <LinearLayout
         android:layout_width="wrap_content"
@@ -22,18 +22,40 @@
             android:textSize="32dp" />
 
         <TextView
-            android:id="@+id/subtitle"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="password manager"
-            android:textSize="12dp" />
-
-        <TextView
             android:id="@+id/versioninfo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="v0.1.0-alpha"
+            android:text="v0.1.0-Alpha"
             android:textSize="12dp" />
+
+        <TextView
+            android:id="@+id/developerinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Develop by: Jeel Dobariya"
+            android:textSize="11dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="24sp"
+        android:gravity="center"
+        android:orientation="vertical" >
+
+        <TextView 
+            android:id="@+id/appdevstatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="App is under active development!!!"
+            android:textSize="14dp" />
+
+        <TextView
+            android:id="@+id/appreleaseinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="We Will Release New Version Soon!!!"
+            android:textSize="14dp" />
     </LinearLayout>
 
     <LinearLayout
@@ -44,31 +66,28 @@
         android:orientation="vertical" >
 
         <Button
-            android:id="@+id/passwordbtn"
+            android:id="@+id/repobtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/button_tint"
-            android:onClick="onClickPasswordBtn"
-            android:text="Password Manager"
-            android:textSize="12sp" />
+            android:onClick="onClickRepoBtn"
+            android:text="Track App Development" />
 
         <Button
-            android:id="@+id/creditbtn"
+            android:id="@+id/licensebtn"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/button_tint"
-            android:onClick="onClickCreditBtn"
-            android:text="Credit"
-            android:textSize="12sp" />
+            android:onClick="onClickLicenseBtn"
+            android:text="View License" />
 
         <Button
-            android:id="@+id/quitbtn"
+            android:id="@+id/quit"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:backgroundTint="@color/button_tint"
-            android:onClick="onClickQuitBtn"
-            android:text="Quit"
-            android:textSize="12sp" />
+            android:onClick="onClickBackBtn"
+            android:text="Go Back" />
     </LinearLayout>
 
 </LinearLayout>
