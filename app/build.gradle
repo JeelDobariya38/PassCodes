@@ -60,4 +60,6 @@ android {
 
 dependencies {
 	implementation project(':common')
+	implementation project(':network')
+	implementation 'com.squareup.okhttp3:okhttp:4.9.3'
 }
