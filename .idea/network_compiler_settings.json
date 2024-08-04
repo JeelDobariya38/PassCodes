@@ -1,0 +1,11 @@
+{
+ "java": {
+  "isCompilerEnabled": "false",
+  "sourceCompatibility": "1.8",
+  "targetCompatibility": "1.8"
+ },
+ "kotlin": {
+  "isCompilerEnabled": "false",
+  "jvmTarget": "1.8"
+ }
+}
