@@ -3,8 +3,8 @@ plugins {
 }
 
 android {
-    compileSdk 33
     namespace "com.jeeldobariya.passcodes"
+	compileSdk 33
 	
     defaultConfig {
         applicationId "com.jeeldobariya.passcodes"
@@ -59,4 +59,5 @@ android {
 }
 
 dependencies {
+	implementation project(':common')
 }
