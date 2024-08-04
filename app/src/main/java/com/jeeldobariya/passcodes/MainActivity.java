@@ -7,8 +7,6 @@ import android.net.Uri;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
-import com.jeeldobariya.passcodes.utils.Logger;
-import java.io.File;
 
 public class MainActivity extends Activity {
 
@@ -16,13 +14,6 @@ public class MainActivity extends Activity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    File logFile = new File(getExternalFilesDir(null), "app_log.txt");
-    Logger.init(logFile, true);
-    checkUpdates();
-  }
-
-  private void checkUpdates() {
-    Logger.info("Dummy Msg", "hello");
   }
 
   public void openBrowser(String link) {
