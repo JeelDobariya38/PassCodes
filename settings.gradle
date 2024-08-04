@@ -8,3 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "PassCodes"
 include ':app'
+include ':common'
+include ':database'
+include ':network'
